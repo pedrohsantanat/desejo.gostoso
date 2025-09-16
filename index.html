@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desejo e Gostoso</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Header -->
+<header>
+    <div class="contatos">
+        <div class="contato-item">
+            <img src="imgs/logo_instagram.png" alt="Ícone Instagram">
+            <a href="https://www.instagram.com/desejo_gostosofranca/" target="_blank">@desejo_gostosofranca</a>
+        </div>
+        <div class="contato-item">
+            <img src="imgs/logo_whatsapp.png" alt="Ícone Whatsapp">
+            <a href="https://shorturl.at/qz7eG" target="_blank">(16) 99220-5812</a>
+        </div>
+    </div>
+
+    <div class="logo">
+        <img src="imgs/logo_chat_desejo_gostoso-remove.png" alt="Desejo e Gostoso">
+    </div>
+
+    <div class="acao">
+        <button onclick="window.location.href='https://shorturl.at/qz7eG'">Faça seu pedido</button>
+    </div>
+</header>
+
+<main>
+    <!-- Seção de destaque -->
+    <section class="destaque">
+        <div class="destaque-container">
+            <div class="destaque-texto">
+                <h1>Salgadinhos de festa<br>fritos e congelados,<br>sempre prontos para<br>sua alegria!</h1>
+                <p>Sabor, qualidade e praticidade que<br>cabem em qualquer ocasião.</p>
+                <button class="cardapio" onclick="document.getElementById('cardapio').scrollIntoView({behavior: 'smooth'});">
+                    Acesse nosso cardápio
+                </button>
+            </div>
+            <div class="destaque-imagem">
+                <img src="imgs/foto_salgados_chat-remove.png" alt="Salgadinhos">
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de localização -->
+    <section class="localizacao">
+        <div class="localizacao-container">
+            <h2>Nossa Localização!</h2>
+            <p>Rua Ana Damasceno de Pádua, 4771 - Jardim Noêmia, Franca - SP</p>
+            <!-- Mapa Google -->
+            <div class="mapa-container">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3672.4827192381157!2d-47.40282348441497!3d-20.54205198642561!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94bd8d0d1b897b45%3A0x7e2e3a1c77ee2d9d!2sRua%20Ana%20Damasceno%20de%20P%C3%A1dua%2C%204771%20-%20Jardim%20No%C3%AAmia%2C%20Franca%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1693638524067!5m2!1spt-BR!2sbr"
+                    width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção produtos / cardápio -->
+    <section id="cardapio" class="produtos">
+        <h1 class="produtos-titulo">Cardápio</h1>
+        <p class="produtos-subtitulo">Escolha entre nossas deliciosas opções</p>
+
+        <div class="categoria">
+            <h2 class="categoria-subtitulo">Salgados Assados</h2>
+            <p class="categoria-observacao">Pedir com antecedência</p>
+            <div class="cards-container">
+                <div class="card"><img src="imagem_cardapio/esfirra_desejo_gostoso-removebg-preview.png" alt="Esfirra"><h2>Esfirra de Carne</h2></div>
+                <div class="card"><img src="imagem_cardapio/enroladinho_de_presunto_e_mussarela_fundo_removido.png" alt="Enroladinho Presunto e Mussarela"><h2>Enroladinho Presunto e Mussarela</h2></div>
+                <div class="card"><img src="imagem_cardapio/mini_pizza-removebg-preview.png" alt="Mini Pizza"><h2>Mini Pizza</h2></div>
+                <div class="card"><img src="imagem_cardapio/enroladinho_de_salsicha-removebg-preview.png" alt="Enroladinho Salsicha"><h2>Enroladinho de Salsicha</h2></div>
+                <div class="card"><img src="imagem_cardapio/enroladinho_de_calabresa.png" alt="Enroladinho Calabresa"><h2>Enroladinho de Calabresa</h2></div>
+            </div>
+        </div>
+
+        <div class="categoria">
+            <h2 class="categoria-subtitulo">Salgados Fritos</h2>
+            <div class="cards-container">
+                <!-- 12 produtos fritos -->
+                <div class="card"><img src="imagem_cardapio/coxinha-removebg-preview.png" alt="Coxinha"><h2>Coxinha</h2></div>
+                <div class="card"><img src="imagem_cardapio/pastelzinho-removebg-preview.png" alt="Pastel"><h2>Pastel (Queijo ou Carne)</h2></div>
+                <div class="card"><img src="imagem_cardapio/salsicha_empanada-removebg-preview.png" alt="Salsicha Empanada"><h2>Salsicha Empanada</h2></div>
+                <div class="card"><img src="imagem_cardapio/salgadinho_de_palmito-removebg-preview.png" alt="Palmito"><h2>Salgadinho de Palmito</h2></div>
+                <div class="card"><img src="imagem_cardapio/salgadinho_de_milho_com_mussarela-removebg.png" alt="Milho Mussarela"><h2>Salgadinho de Milho com Mussarela</h2></div>
+                <div class="card"><img src="imagem_cardapio/salgadinho_de_pernil-removebg.png" alt="Pernil"><h2>Salgadinho de Pernil</h2></div>
+                <div class="card"><img src="imagem_cardapio/bolinha_de_queijo.png" alt="Bolinha de queijo"><h2>Bolinha de queijo</h2></div>
+                <div class="card"><img src="imagem_cardapio/salgadinho_de_presunto_e_mussarela-removebg.png" alt="Presunto Mussarela"><h2>Salgadinho de Presunto e Mussarela</h2></div>
+                <div class="card"><img src="imagem_cardapio/kibe.png" alt="Kibe"><h2>Kibe</h2></div>
+                <div class="card"><img src="imagem_cardapio/salgadinho_de_calabresa_com_mussarela-removebg.png" alt="Calabresa Mussarela"><h2>Salgadinho de Calabresa com Mussarela</h2></div>
+                <div class="card"><img src="imagem_cardapio/croquetes.png" alt="Croquetes"><h2>Croquetes</h2></div>
+            </div>
+        </div>
+
+        <div class="categoria">
+            <h2 class="categoria-subtitulo">Outros</h2>
+            <div class="cards-container">
+                <div class="card"><img src="imagem_cardapio/espetinho_de_frango-removebg.png" alt="Espetinho"><h2>Espetinho de frango</h2></div>
+                <div class="card"><img src="imagem_cardapio/mini_churros.png" alt="Mini Churros"><h2>Mini Churros</h2></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção contato direto com gradiente -->
+    <section class="contato-direto">
+        <div class="contato-container">
+            <h1>Pronto para satisfazer seu Desejo?</h1>
+            <p>Entre em contato e faça seu pedido agora mesmo!</p>
+            <button class="cardapio" onclick="window.location.href='https://shorturl.at/qz7eG'">
+                Fale conosco no WhatsApp!
+            </button>
+        </div>
+    </section>
+</main>
+
+<!-- Footer -->
+<footer>
+    <div class="footer-container">
+        <!-- Contato -->
+        <div class="footer-col">
+            <h3>Contato</h3>
+            <p class="contato-item">
+                <img src="imgs/logo_whatsapp.png" alt="WhatsApp">
+                <a href="https://shorturl.at/qz7eG" target="_blank">16 99220-5812</a>
+            </p>
+            <p class="contato-item">
+                <img src="imgs/logo_instagram.png" alt="Instagram">
+                <a href="https://instagram.com/desejo_gostosofranca" target="_blank">@desejo_gostosofranca</a>
+            </p>
+            <p class="contato-item">
+                <img src="imgs/logo_localização.png" alt="Localização">
+                R. Ana Damasceno de Pádua - Jardim Noêmia, Franca-SP, 14403-770
+            </p>
+            <p class="contato-item">
+                <img src="imgs/logo_relógio.png" alt="Horário">
+                Atendimentos de Segunda à Sábado - 07h às 20h
+            </p>
+        </div>
+
+        <!-- Logo + Autor -->
+        <div class="footer-col center">
+            <h2>Desejo e Gostoso</h2>
+            <p>Desenvolvido por <a class="github-link" href="https://github.com/pedrohsantanat" target="_blank">Pedro Santana</a></p>
+        </div>
+
+
+        <!-- Redes sociais -->
+        <div class="footer-col">
+            <h3>Siga para novidades</h3>
+            <p class="contato-item">
+                <img src="imgs/logo_instagram.png" alt="Instagram">
+                <a href="https://instagram.com/desejo_gostosofranca" target="_blank">@desejo_gostosofranca</a>
+            </p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

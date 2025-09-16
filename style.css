@@ -1,0 +1,405 @@
+/* Importa a fonte Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #fff0f5;
+    color: #000000;
+}
+
+/* Header */
+header {
+    background-color: #fff;
+    padding: 35px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+/* Contatos */
+.contatos {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 0.9rem;
+    color: #333;
+}
+
+.contato-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.contato-item img {
+    width: 30px;
+    height: 30px;
+}
+
+.contato-item a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+    margin-left: 2px;
+}
+
+.contato-item a:hover {
+    text-decoration: underline;
+}
+
+/* Logo centralizada */
+.logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.logo img {
+    width: 150px;
+    height: auto;
+}
+
+/* Botão do header */
+.acao {
+    margin-left: auto;
+}
+
+.acao button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background: linear-gradient(90deg, #f8c211, #f8c211, #ffa800);
+    color: black;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.acao button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* Main */
+main {
+    background-color: #ffffff;
+}
+
+/* Destaque */
+.destaque {
+    padding: 160px 20px;
+}
+
+.destaque-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.destaque-texto {
+    max-width: 500px;
+    text-align: left;
+}
+
+.destaque-texto h1 {
+    font-size: 2.5rem;
+    color: #000;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 15px;
+}
+
+.destaque-texto p {
+    font-size: 1.2rem;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.destaque-texto .cardapio {
+    padding: 12px 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: 2px solid #000;
+    border-radius: 8px;
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.destaque-texto .cardapio:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.destaque-imagem img {
+    width: 110%;
+    max-width: 1000px;
+    height: auto;
+    border-radius: 15px;
+}
+
+/* Localização */
+.localizacao {
+    background-color: #000000;
+    color:#fff;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.localizacao-container h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.localizacao-container p {
+    font-size: 1rem;
+    margin-bottom: 5px;
+    color: #aaa;
+}
+
+.mapa-container {
+    width: 400px;
+    height: 400px;
+    margin: 20px auto;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.mapa-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* Contato direto */
+.contato-direto {
+    background: linear-gradient(90deg, #ffa800, #f8c211, #f8c211);
+    color: #000;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.contato-container h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.contato-container p {
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+}
+
+.contato-container .cardapio {
+    padding: 12px 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: 2px solid #000;
+    border-radius: 8px;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.contato-container .cardapio:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(255,255,255,0.3);
+}
+
+/* Produtos / Cardápio */
+.produtos {
+    background-color: #fff;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.produtos-titulo {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.produtos-subtitulo {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.categoria {
+    margin-bottom: 50px;
+}
+
+.categoria-subtitulo {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.categoria-observacao {
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    overflow: hidden;
+    max-width: 200px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.card h2 {
+    padding: 10px;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 40px 20px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-col {
+    flex: 1;
+    min-width: 250px;
+}
+
+.footer-col h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.footer-col h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.footer-col p {
+    font-size: 0.95rem;
+    margin: 5px 0;
+}
+
+/* Remove cor amarela padrão dos links do footer */
+.footer-col a {
+    color: #fff; /* links padrão ficam brancos */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+/* Apenas o link do GitHub fica amarelo */
+.footer-col a.github-link {
+    color: #f8c211;
+}
+
+.footer-col a.github-link:hover {
+    color: #ffa800;
+}
+
+/* Hover padrão dos outros links do footer */
+.footer-col a:not(.github-link):hover {
+    color: #ffa800;
+}
+
+/* Ícones dentro do footer iguais da header */
+.footer-col .contato-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin: 8px 0;
+}
+
+.footer-col .contato-item img {
+    width: 30px;  /* largura igual aos ícones do header */
+    height: 30px; /* altura igual aos ícones do header */
+}
+
+/* Responsividade footer */
+@media(max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    .footer-col {
+        text-align: center;
+    }
+}
+
+/* Responsividade */
+@media(max-width: 768px){
+    .destaque-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .destaque-texto {
+        text-align: center;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .logo {
+        position: static;
+        transform: none;
+    }
+
+    .contatos, .acao {
+        align-items: center;
+        justify-content: center;
+    }
+}
